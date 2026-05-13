@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.homebody{
+  background-image: url('/public/Image/background.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background:#f0f4f8;
+  color: black;
+}
+
+.logo img {
+  height: 80px;
+  margin-bottom: 0;
+}
+
+.navbar nav a {
+  color: black;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.navbar nav a:hover{
+  color: blue;
+}
+
+.navbar nav a.btn {
+  background: #2b74d8;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: white;
+}
+
+.navbar nav a.btn:hover{
+  background-color: #3881e8;
+}
+
+
+/* MAIN */
+#home {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  padding: 250px;
+  margin: 0;
+}
+
+#home h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+#home p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.cta {
+  background: white;
+  color: #1e40af;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FEATURES */
+.features {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.feature-card h3 {
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+/* ABOUT */
+.about {
+  background: #e5e7eb;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 15px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+.footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #home h1 {
+    font-size: 28px;
+  }
+}

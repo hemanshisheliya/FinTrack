@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #1f2937, #111827);
+  color: #fff;
+  padding: 20px;
+  flex-shrink: 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.sidebar img{
+  display: flex;
+  width: 195px;
+}
+
+.sidebar a,
+.logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: #d1d5db;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+/* Hover effect */
+.sidebar a:hover,
+.sidebar a.active,
+.logout-btn:hover {
+  background: #2b74d8;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sidebar h2 {
+    display: none;
+  }
+
+  .sidebar a {
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+

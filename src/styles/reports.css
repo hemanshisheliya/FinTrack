@@ -1,0 +1,156 @@
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 25px;
+}
+
+/* HEADER */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.topbar select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.report-controls{
+display:flex;
+gap:15px;
+align-items:center;
+}
+
+.downloadBtn{
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+}
+
+.downloadBtn:hover{
+background:#16a34a;
+}
+/* SUMMARY */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+.card p {
+  color: #6b7280;
+}
+
+/* CHARTS */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.chart-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 500px;
+  height: 500px;
+
+}
+
+.chart-placeholder {
+  height: 220px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+/* TABLE */
+.report-table {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.red {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sidebar h2 {
+    display: none;
+  }
+
+  .sidebar a {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  th, td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
