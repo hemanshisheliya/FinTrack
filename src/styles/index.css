@@ -49,16 +49,15 @@
   text-align: center;
   padding: 80px 20px;
   color: white;
-  padding: 250px;
+  padding: 230px;
   margin: 0;
-  background-image: url('/public/Image/back.png');
+  background-image: url('/public/Image/background.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
 #home h1 {
-  padding-top: 90px;
   font-size: 36px;
   margin-bottom: 15px;
 }
