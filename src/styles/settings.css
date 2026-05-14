@@ -34,7 +34,7 @@
 .main {
   flex: 1;
   padding: 25px;
-  margin-left: 240px;
+  /* margin-left: 240px; */
 }
 
 .topbar {

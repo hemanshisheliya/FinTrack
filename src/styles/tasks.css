@@ -1,133 +1,389 @@
- .task-main{
-  flex:1;
-  padding:25px;
-  margin-left: 240px;
+/* =========================
+   TASK MAIN SECTION
+========================= */
+.task-main {
+  flex: 1;
+  margin-left: 250px; /* SAME AS SIDEBAR */
+  padding: 30px;
+  min-height: 100vh;
+  background: #f4f6f8;
+  transition: 0.3s ease;
 }
 
-.task-topbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:25px;
+/* =========================
+   TOPBAR
+========================= */
+.task-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
-.task-add-btn{
-  background:#2b74d8;
-  color:white;
-  border:none;
-  padding:8px 16px; 
-  border-radius:6px;
-  cursor:pointer;
+.task-topbar h2 {
+  font-size: 30px;
+  color: #111827;
+  font-weight: bold;
 }
 
-.task-stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-  margin-bottom:25px;
+/* ADD BUTTON */
+.task-add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-.task-stat{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  text-align:center;
+.task-add-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
 }
 
-.task-stat h3{
-  font-size:24px;
+/* =========================
+   TASK STATS
+========================= */
+.task-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 30px;
 }
 
-.task-table-box{
-  background:white;
-  padding:20px;
-  border-radius:12px;
+/* STAT CARD */
+.task-stat {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
 }
 
-.task-table-box table{
-  width:100%;
-  border-collapse:collapse;
+.task-stat:hover {
+  transform: translateY(-5px);
 }
 
+.task-stat h3 {
+  font-size: 30px;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.task-stat p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* =========================
+   TABLE BOX
+========================= */
+.task-table-box {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.06);
+  overflow-x: auto;
+}
+
+/* TABLE */
+.task-table-box table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+/* TABLE HEAD */
+.task-table-box th {
+  background: #f9fafb;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* TABLE CELLS */
 .task-table-box th,
-.task-table-box td{
-  padding:12px;
-  border-bottom:1px solid #e5e7eb;
+.task-table-box td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 15px;
 }
 
-.task-status{
-  width:100px;
-  height:32px;
-  border-radius:20px;
-  background:#fef3c7;
-  color:#92400e;
-  margin: 0;
-  padding: 0;
+/* =========================
+   STATUS BADGES
+========================= */
+.task-status,
+.task-status-completed {
+  width: 110px;
+  height: 34px;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: default;
 }
 
-.task-status-completed{
-  width:100px;
-  height:32px;
-  border-radius:20px;
-  background:#dcfce7;
-  color:#166534;
-  margin: 0;
-  padding: 0;
+/* PENDING */
+.task-status {
+  background: #fef3c7;
+  color: #92400e;
 }
 
+/* COMPLETED */
+.task-status-completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* =========================
+   DELETE BUTTON
+========================= */
 .task-delete-btn {
-  border:none;
-  background:white;
-  cursor:pointer;
-  font-size:16px;
-  margin-left: 15px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
 }
 
-.task-modal{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.5);
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.task-delete-btn:hover {
+  transform: scale(1.1);
 }
 
-.task-modal-box{
-  background:white;
-  padding:20px;
-  width:350px;
-  border-radius:10px;
+/* =========================
+   MODAL
+========================= */
+.task-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2000;
 }
 
-.task-modal-box h3{
-  margin-bottom: 15px;
+/* MODAL BOX */
+.task-modal-box {
+  background: white;
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: popup 0.3s ease;
 }
 
+/* POPUP ANIMATION */
+@keyframes popup {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* MODAL TITLE */
+.task-modal-box h3 {
+  margin-bottom: 20px;
+  color: #111827;
+  font-size: 24px;
+}
+
+/* INPUTS */
 .task-modal-box input,
-.task-modal-box select{
-  width:100%;
-  padding:8px;
-  margin-bottom:10px;
+.task-modal-box select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
 }
 
-.task-modal-actions{
-  display:flex;
-  justify-content:space-between;
+/* FOCUS */
+.task-modal-box input:focus,
+.task-modal-box select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* =========================
+   MODAL ACTIONS
+========================= */
+.task-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
+/* SAVE BUTTON */
 .task-save {
-  padding:8px 14px;
-  border:none;
-  border-radius:6px;
-  background:#2563eb;
-  color:white;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.task-cancel{
-  background:gray;
-  padding:8px 14px;
-  border:none;
-  border-radius:6px;
-  color:white;
+.task-save:hover {
+  background: #1d4ed8;
+}
+
+/* CANCEL BUTTON */
+.task-cancel {
+  background: gray;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.task-cancel:hover {
+  background: #4b5563;
+}
+
+/* ===================================================
+                RESPONSIVE DESIGN
+=================================================== */
+
+/* =========================
+   LARGE TABLETS
+========================= */
+@media (max-width: 1200px) {
+
+  .task-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media (max-width: 992px) {
+
+  .task-main {
+    margin-left: 220px;
+    padding: 25px;
+  }
+
+  .task-topbar h2 {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+@media (max-width: 768px) {
+
+  .task-main {
+    margin-left: 0;
+    margin-top: 90px; /* FOR MOBILE SIDEBAR */
+    padding: 20px;
+  }
+
+  .task-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-add-btn {
+    width: 100%;
+  }
+
+  .task-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .task-table-box {
+    padding: 20px;
+  }
+
+  .task-table-box table {
+    min-width: 650px;
+  }
+
+  .task-modal-box {
+    padding: 24px 20px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE DEVICES
+========================= */
+@media (max-width: 576px) {
+
+  .task-main {
+    padding: 15px;
+  }
+
+  .task-topbar h2 {
+    font-size: 22px;
+  }
+
+  .task-stat h3 {
+    font-size: 24px;
+  }
+
+  .task-table-box th,
+  .task-table-box td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .task-status,
+  .task-status-completed {
+    width: 95px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .task-modal-box h3 {
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+@media (max-width: 360px) {
+
+  .task-topbar h2 {
+    font-size: 20px;
+  }
+
+  .task-add-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .task-modal-box {
+    padding: 20px 15px;
+  }
+
+  .task-save,
+  .task-cancel {
+    width: 100%;
+  }
 }
