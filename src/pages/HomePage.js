@@ -5,8 +5,6 @@ import "../styles/index.css";
 function HomePage() {
   return (
     <>
-     <div className="homebody">
-
       <header className="navbar">
         <div className="logo">
           <img src="/Image/FinTrack.png" alt="FinTrack" />
@@ -83,7 +81,7 @@ function HomePage() {
       <footer className="footer">
         <p>© 2026 FinTrack | Finance & Workflow Project</p>
       </footer>
-    </div>
+    
     </>
   );
 }

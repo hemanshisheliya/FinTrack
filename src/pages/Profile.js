@@ -59,7 +59,7 @@ function Profile() {
           <div className="profile-top">
 
             <div className="avatar">
-              <img src="/Image/profile.jpg" alt="profile" />
+              <img src="/Image/download.webp" alt="profile" />
             </div>
 
             <div>

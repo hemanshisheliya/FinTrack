@@ -5,13 +5,6 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-.homebody{
-  background-image: url('/public/Image/background.png');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -58,9 +51,14 @@
   color: white;
   padding: 250px;
   margin: 0;
+  background-image: url('/public/Image/back.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 #home h1 {
+  padding-top: 90px;
   font-size: 36px;
   margin-bottom: 15px;
 }
