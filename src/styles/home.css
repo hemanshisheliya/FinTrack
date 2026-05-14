@@ -1,17 +1,11 @@
-/* =========================
-   MAIN CONTENT AREA
-========================= */
 .main {
   flex: 1;
-  margin-left: 250px; /* SAME AS SIDEBAR WIDTH */
+  margin-left: 250px; 
   padding: 30px;
   min-height: 100vh;
   transition: 0.3s ease;
 }
 
-/* =========================
-   TOPBAR
-========================= */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -27,7 +21,6 @@
   font-weight: bold;
 }
 
-/* USER SECTION */
 .topbar .user {
   display: flex;
   align-items: center;
@@ -35,7 +28,6 @@
   flex-wrap: wrap;
 }
 
-/* PROFILE BUTTON */
 .topbar .user a {
   text-decoration: none;
   color: #111827;
@@ -51,9 +43,6 @@
   color: white;
 }
 
-/* =========================
-   TOTAL BALANCE
-========================= */
 .totalBal {
   background: white;
   padding: 25px;
@@ -73,9 +62,6 @@
   color: #2563eb;
 }
 
-/* =========================
-   DASHBOARD CARDS
-========================= */
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -83,7 +69,6 @@
   margin-bottom: 30px;
 }
 
-/* CARD */
 .card {
   background: white;
   padding: 22px;
@@ -108,9 +93,6 @@
   line-height: 1.5;
 }
 
-/* =========================
-   CONTENT SECTION
-========================= */
 .content {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -118,7 +100,6 @@
   margin-bottom: 30px;
 }
 
-/* BOX */
 .box {
   background: white;
   padding: 22px;
@@ -132,7 +113,6 @@
   color: #111827;
 }
 
-/* LIST */
 .box li {
   list-style: none;
   margin-bottom: 10px;
@@ -140,9 +120,6 @@
   font-size: 15px;
 }
 
-/* =========================
-   TABLE
-========================= */
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -167,7 +144,6 @@ th {
   color: #111827;
 }
 
-/* STATUS COLORS */
 .green {
   color: #16a34a;
   font-weight: 600;
@@ -178,16 +154,12 @@ th {
   font-weight: 600;
 }
 
-/* =========================
-   SMART SECTION
-========================= */
 .smart {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* SMART CARD */
 .smartCard {
   background: white;
   padding: 22px;
@@ -205,7 +177,6 @@ th {
   font-size: 20px;
 }
 
-/* CARD COLORS */
 .greenCard {
   border-top: 5px solid #16a34a;
 }
@@ -214,13 +185,6 @@ th {
   border-top: 5px solid #f59e0b;
 }
 
-/* ===================================================
-                RESPONSIVE DESIGN
-=================================================== */
-
-/* =========================
-   LARGE TABLETS
-========================= */
 @media (max-width: 1200px) {
 
   .cards {
@@ -232,9 +196,6 @@ th {
   }
 }
 
-/* =========================
-   TABLETS
-========================= */
 @media (max-width: 992px) {
 
   .main {
@@ -251,9 +212,6 @@ th {
   }
 }
 
-/* =========================
-   MOBILE DEVICES
-========================= */
 @media (max-width: 768px) {
 
   .main {
@@ -297,9 +255,6 @@ th {
   }
 }
 
-/* =========================
-   SMALL MOBILE DEVICES
-========================= */
 @media (max-width: 576px) {
 
   .main {
@@ -342,9 +297,6 @@ th {
   }
 }
 
-/* =========================
-   EXTRA SMALL DEVICES
-========================= */
 @media (max-width: 360px) {
 
   .topbar h2 {

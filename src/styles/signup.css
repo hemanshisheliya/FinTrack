@@ -1,6 +1,3 @@
-/* =========================
-   ROOT VARIABLES
-========================= */
 :root {
   --primary-color: #2196f3;
   --background-color: #f4f7fb;
@@ -10,9 +7,6 @@
   --border-radius: 14px;
 }
 
-/* =========================
-   GLOBAL STYLES
-========================= */
 * {
   margin: 0;
   padding: 0;
@@ -26,9 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-/* =========================
-   AUTH CONTAINER
-========================= */
 .auth-container {
   width: 100%;
   max-width: 450px;
@@ -40,9 +31,6 @@ body {
   padding: 30px 20px;
 }
 
-/* =========================
-   AUTH CARD
-========================= */
 .auth-card {
   width: 100%;
   background: white;
@@ -56,9 +44,6 @@ body {
   transform: translateY(-3px);
 }
 
-/* =========================
-   HEADING
-========================= */
 .auth-card h2 {
   margin-bottom: 12px;
   font-size: 32px;
@@ -67,7 +52,6 @@ body {
   font-weight: 700;
 }
 
-/* SUBTITLE */
 .auth-subtitle {
   text-align: center;
   color: #6b7280;
@@ -76,30 +60,24 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   FORM
-========================= */
 .auth-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* FORM GROUP */
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-/* LABEL */
 .form-group label {
   font-weight: 600;
   color: var(--text-color);
   font-size: 15px;
 }
 
-/* INPUT */
 .form-group input {
   width: 100%;
   padding: 14px;
@@ -110,15 +88,11 @@ body {
   transition: 0.3s ease;
 }
 
-/* INPUT FOCUS */
 .form-group input:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.15);
 }
 
-/* =========================
-   FORM OPTIONS
-========================= */
 .form-options {
   display: flex;
   justify-content: space-between;
@@ -128,7 +102,6 @@ body {
   margin-top: -5px;
 }
 
-/* FORGOT PASSWORD */
 .forgot-password {
   color: var(--primary-color);
   text-decoration: none;
@@ -141,9 +114,6 @@ body {
   text-decoration: underline;
 }
 
-/* =========================
-   AUTH BUTTON
-========================= */
 .auth-button {
   width: 100%;
   background: var(--primary-color);
@@ -158,16 +128,12 @@ body {
   transition: 0.3s ease;
 }
 
-/* BUTTON HOVER */
 .auth-button:hover {
   transform: translateY(-2px);
   background: #1976d2;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* =========================
-   AUTH SWITCH
-========================= */
 .auth-switch {
   text-align: center;
   margin-top: 25px;
@@ -185,13 +151,6 @@ body {
   text-decoration: underline;
 }
 
-/* ===================================================
-                RESPONSIVE DESIGN
-=================================================== */
-
-/* =========================
-   TABLETS
-========================= */
 @media (max-width: 768px) {
 
   .auth-container {
@@ -225,9 +184,6 @@ body {
   }
 }
 
-/* =========================
-   MOBILE DEVICES
-========================= */
 @media (max-width: 576px) {
 
   .auth-card {
@@ -252,9 +208,6 @@ body {
   }
 }
 
-/* =========================
-   EXTRA SMALL DEVICES
-========================= */
 @media (max-width: 360px) {
 
   .auth-card {

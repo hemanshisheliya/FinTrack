@@ -1,18 +1,12 @@
-/* =========================
-   MAIN SECTION
-========================= */
 .main {
   flex: 1;
-  margin-left: 250px; /* SAME AS SIDEBAR */
+  margin-left: 250px; 
   padding: 30px;
   min-height: 100vh;
   background: #f4f6f8;
   transition: 0.3s ease;
 }
 
-/* =========================
-   TOPBAR
-========================= */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -28,7 +22,6 @@
   font-weight: bold;
 }
 
-/* BUTTON */
 .topbar button {
   background: #2563eb;
   color: #fff;
@@ -46,9 +39,6 @@
   transform: translateY(-2px);
 }
 
-/* =========================
-   FILTERS
-========================= */
 .filters {
   display: flex;
   gap: 16px;
@@ -56,7 +46,6 @@
   margin-bottom: 25px;
 }
 
-/* INPUTS & SELECT */
 .filters input,
 .filters select {
   flex: 1;
@@ -76,9 +65,6 @@
   box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
 }
 
-/* =========================
-   TABLE BOX
-========================= */
 .table-box {
   background: #fff;
   padding: 25px;
@@ -87,21 +73,18 @@
   overflow-x: auto;
 }
 
-/* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
   min-width: 700px;
 }
 
-/* TABLE HEAD */
 th {
   background: #f9fafb;
   color: #111827;
   font-weight: 600;
 }
 
-/* TABLE CELLS */
 th,
 td {
   padding: 14px;
@@ -110,7 +93,6 @@ td {
   font-size: 15px;
 }
 
-/* STATUS COLORS */
 .green {
   color: #16a34a;
   font-weight: 600;
@@ -121,9 +103,6 @@ td {
   font-weight: 600;
 }
 
-/* ===================================================
-                    MODAL
-=================================================== */
 .modal {
   display: flex;
   position: fixed;
@@ -135,7 +114,6 @@ td {
   z-index: 2000;
 }
 
-/* MODAL BOX */
 .modal-box {
   background: white;
   padding: 28px;
@@ -146,7 +124,6 @@ td {
   animation: popup 0.3s ease;
 }
 
-/* POPUP ANIMATION */
 @keyframes popup {
   from {
     transform: scale(0.9);
@@ -159,14 +136,12 @@ td {
   }
 }
 
-/* TITLE */
 .modal-box h3 {
   margin-bottom: 20px;
   color: #111827;
   font-size: 24px;
 }
 
-/* INPUTS */
 .modal-box input,
 .modal-box select {
   width: 100%;
@@ -179,16 +154,12 @@ td {
   transition: 0.3s ease;
 }
 
-/* FOCUS */
 .modal-box input:focus,
 .modal-box select:focus {
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
 }
 
-/* =========================
-   MODAL ACTIONS
-========================= */
 .modal-actions {
   display: flex;
   justify-content: flex-end;
@@ -197,7 +168,6 @@ td {
   flex-wrap: wrap;
 }
 
-/* BUTTONS */
 .modal-actions button {
   padding: 11px 18px;
   border: none;
@@ -209,12 +179,10 @@ td {
   transition: 0.3s ease;
 }
 
-/* HOVER */
 .modal-actions button:hover {
   background: #1d4ed8;
 }
 
-/* CANCEL BUTTON */
 .modal-actions .cancel {
   background: gray;
 }
@@ -223,13 +191,6 @@ td {
   background: #4b5563;
 }
 
-/* ===================================================
-                RESPONSIVE DESIGN
-=================================================== */
-
-/* =========================
-   LARGE TABLETS
-========================= */
 @media (max-width: 1200px) {
 
   .filters input,
@@ -238,9 +199,6 @@ td {
   }
 }
 
-/* =========================
-   TABLETS
-========================= */
 @media (max-width: 992px) {
 
   .main {
@@ -257,14 +215,11 @@ td {
   }
 }
 
-/* =========================
-   MOBILE DEVICES
-========================= */
 @media (max-width: 768px) {
 
   .main {
     margin-left: 0;
-    margin-top: 90px; /* FOR MOBILE SIDEBAR */
+    margin-top: 90px; 
     padding: 20px;
   }
 
@@ -300,9 +255,6 @@ td {
   }
 }
 
-/* =========================
-   SMALL MOBILE DEVICES
-========================= */
 @media (max-width: 576px) {
 
   .main {
@@ -332,9 +284,6 @@ td {
   }
 }
 
-/* =========================
-   EXTRA SMALL DEVICES
-========================= */
 @media (max-width: 360px) {
 
   .topbar h2 {

@@ -1,18 +1,12 @@
-/* =========================
-   MAIN SECTION
-========================= */
 .main {
   flex: 1;
-  margin-left: 250px; /* SAME AS SIDEBAR WIDTH */
+  margin-left: 250px; 
   padding: 30px;
   min-height: 100vh;
   background: #f4f6f8;
   transition: 0.3s ease;
 }
 
-/* =========================
-   HEADER / TOPBAR
-========================= */
 .topbar {
   margin-bottom: 25px;
 }
@@ -23,9 +17,6 @@
   font-weight: bold;
 }
 
-/* =========================
-   PROFILE CARD
-========================= */
 .profile-card {
   background: #fff;
   max-width: 850px;
@@ -40,9 +31,7 @@
   transform: translateY(-4px);
 }
 
-/* =========================
-   PROFILE TOP SECTION
-========================= */
+
 .profile-top {
   display: flex;
   align-items: center;
@@ -51,7 +40,6 @@
   flex-wrap: wrap;
 }
 
-/* AVATAR */
 .avatar img {
   width: 90px;
   height: 90px;
@@ -61,7 +49,6 @@
   background: #dbeafe;
 }
 
-/* USER INFO */
 .profile-info h3 {
   font-size: 28px;
   color: #111827;
@@ -73,15 +60,11 @@
   font-size: 16px;
 }
 
-/* =========================
-   DETAILS SECTION
-========================= */
 .details {
   border-top: 1px solid #e5e7eb;
   margin-top: 15px;
 }
 
-/* ROW */
 .row {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -91,14 +74,12 @@
   align-items: center;
 }
 
-/* LABEL */
 .row span {
   font-weight: 600;
   color: #374151;
   font-size: 16px;
 }
 
-/* VALUE */
 .row p {
   color: #4b5563;
   font-size: 15px;
@@ -106,9 +87,6 @@
   word-break: break-word;
 }
 
-/* =========================
-   BUTTON SECTION
-========================= */
 .changes {
   display: flex;
   gap: 18px;
@@ -116,7 +94,6 @@
   flex-wrap: wrap;
 }
 
-/* BUTTONS */
 .back-btn,
 .edit-btn {
   background: #2563eb;
@@ -130,20 +107,12 @@
   transition: 0.3s ease;
 }
 
-/* HOVER */
 .back-btn:hover,
 .edit-btn:hover {
   background: #1d4ed8;
   transform: translateY(-2px);
 }
 
-/* ===================================================
-                RESPONSIVE DESIGN
-=================================================== */
-
-/* =========================
-   LARGE TABLETS
-========================= */
 @media (max-width: 992px) {
 
   .main {
@@ -160,9 +129,6 @@
   }
 }
 
-/* =========================
-   TABLETS
-========================= */
 @media (max-width: 768px) {
 
   .main {
@@ -184,7 +150,6 @@
     font-size: 24px;
   }
 
-  /* DETAILS STACK */
   .row {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -199,7 +164,6 @@
     font-size: 14px;
   }
 
-  /* BUTTONS */
   .changes {
     flex-direction: column;
   }
@@ -210,9 +174,6 @@
   }
 }
 
-/* =========================
-   MOBILE DEVICES
-========================= */
 @media (max-width: 576px) {
 
   .main {
@@ -248,9 +209,6 @@
   }
 }
 
-/* =========================
-   EXTRA SMALL DEVICES
-========================= */
 @media (max-width: 360px) {
 
   .topbar h2 {

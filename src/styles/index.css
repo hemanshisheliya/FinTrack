@@ -5,7 +5,6 @@
   font-family: "Segoe UI", sans-serif;
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -43,8 +42,6 @@
   background-color: #3881e8;
 }
 
-
-/* MAIN */
 #home {
   text-align: center;
   padding: 80px 20px;
@@ -76,7 +73,6 @@
   font-weight: bold;
 }
 
-/* FEATURES */
 .features {
   padding: 60px 30px;
   text-align: center;
@@ -104,7 +100,6 @@
   font-size: 25px;
 }
 
-/* ABOUT */
 .about {
   background: #e5e7eb;
   padding: 50px 30px;
@@ -118,15 +113,12 @@
   line-height: 1.6;
 }
 
-/* FOOTER */
 .footer {
   background: #111827;
   color: #9ca3af;
   text-align: center;
   padding: 15px;
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 992px) {
   #home h1 {
@@ -145,7 +137,6 @@
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   .navbar {
     flex-direction: column;
     gap: 15px;
@@ -161,7 +152,6 @@
     font-size: 16px;
   }
 
-  /* HOME */
   #home {
     padding: 80px 20px;
   }
@@ -178,13 +168,11 @@
     padding: 12px 24px;
   }
 
-  /* SECTION TITLES */
   .features h2,
   .about h2 {
     font-size: 32px;
   }
 
-  /* CARDS */
   .feature-card {
     padding: 28px 20px;
   }

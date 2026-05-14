@@ -1,18 +1,12 @@
-/* =========================
-   MAIN SECTION
-========================= */
 .main {
   flex: 1;
-  margin-left: 250px; /* SAME AS SIDEBAR WIDTH */
+  margin-left: 250px; 
   padding: 30px;
   min-height: 100vh;
   background: #f4f6f8;
   transition: 0.3s ease;
 }
 
-/* =========================
-   TOPBAR / HEADER
-========================= */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -28,9 +22,6 @@
   font-weight: bold;
 }
 
-/* =========================
-   REPORT CONTROLS
-========================= */
 .report-controls {
   display: flex;
   gap: 15px;
@@ -38,7 +29,6 @@
   flex-wrap: wrap;
 }
 
-/* SELECT */
 .topbar select {
   padding: 10px 14px;
   border-radius: 10px;
@@ -54,7 +44,6 @@
   border-color: #2563eb;
 }
 
-/* DOWNLOAD BUTTON */
 .downloadBtn {
   background: #2563eb;
   color: white;
@@ -71,9 +60,6 @@
   transform: translateY(-2px);
 }
 
-/* =========================
-   SUMMARY SECTION
-========================= */
 .summary {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -81,7 +67,6 @@
   margin-bottom: 35px;
 }
 
-/* CARD */
 .card {
   background: #fff;
   padding: 25px;
@@ -105,9 +90,6 @@
   font-size: 15px;
 }
 
-/* =========================
-   CHARTS SECTION
-========================= */
 .charts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -115,7 +97,6 @@
   margin-bottom: 35px;
 }
 
-/* CHART BOX */
 .chart-box {
   background: #fff;
   padding: 22px;
@@ -125,14 +106,12 @@
   overflow: hidden;
 }
 
-/* CHART TITLE */
 .chart-box h3 {
   margin-bottom: 15px;
   color: #111827;
   font-size: 20px;
 }
 
-/* CHART PLACEHOLDER */
 .chart-placeholder {
   width: 100%;
   height: 320px;
@@ -148,9 +127,6 @@
   padding: 15px;
 }
 
-/* =========================
-   TABLE SECTION
-========================= */
 .report-table {
   background: #fff;
   padding: 25px;
@@ -158,13 +134,11 @@
   box-shadow: 0 5px 14px rgba(0,0,0,0.06);
 }
 
-/* TABLE WRAPPER */
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
 }
 
-/* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -172,14 +146,12 @@ table {
   min-width: 650px;
 }
 
-/* TABLE HEADER */
 th {
   background: #f9fafb;
   color: #111827;
   font-weight: 600;
 }
 
-/* TABLE CELLS */
 th,
 td {
   padding: 14px;
@@ -188,19 +160,11 @@ td {
   font-size: 15px;
 }
 
-/* NEGATIVE VALUE */
 .red {
   color: #dc2626;
   font-weight: 600;
 }
 
-/* ===================================================
-                RESPONSIVE DESIGN
-=================================================== */
-
-/* =========================
-   LARGE TABLETS
-========================= */
 @media (max-width: 1200px) {
 
   .summary {
@@ -212,9 +176,6 @@ td {
   }
 }
 
-/* =========================
-   TABLETS
-========================= */
 @media (max-width: 992px) {
 
   .main {
@@ -231,14 +192,11 @@ td {
   }
 }
 
-/* =========================
-   MOBILE DEVICES
-========================= */
 @media (max-width: 768px) {
 
   .main {
     margin-left: 0;
-    margin-top: 90px; /* FOR MOBILE SIDEBAR */
+    margin-top: 90px; 
     padding: 20px;
   }
 
@@ -273,9 +231,6 @@ td {
   }
 }
 
-/* =========================
-   SMALL MOBILE DEVICES
-========================= */
 @media (max-width: 576px) {
 
   .main {
@@ -310,9 +265,6 @@ td {
   }
 }
 
-/* =========================
-   EXTRA SMALL DEVICES
-========================= */
 @media (max-width: 360px) {
 
   .topbar h2 {
