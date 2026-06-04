@@ -46,7 +46,7 @@ function Login() {
       alert("Login Successful ✅");
       navigate("/dashboard");
     } else {
-      alert("Invalid email or password");
+      alert("Invalid email or password, email:admin@gmail.com and password:123456");
     }
   };
 
